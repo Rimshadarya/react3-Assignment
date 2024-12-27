@@ -1,0 +1,14 @@
+.divContainer {
+    border: 5px solid black;
+    box-shadow: 0 0 20px grey;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 300px;
+    text-align: center;
+    padding-left: 10px;
+    display: inline-block;
+}
+.img{
+  width:100%;
+  height: 100%;
+}

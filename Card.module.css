@@ -1,14 +1,56 @@
-.divContainer {
-    border: 5px solid black;
-    box-shadow: 0 0 20px grey;
-    margin-left: 10px;
-    margin-top: 10px;
-    width: 300px;
-    text-align: center;
-    padding-left: 10px;
-    display: inline-block;
+.card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
 }
-.img{
-  width:100%;
-  height: 100%;
+
+.image {
+  height: 200px;
+}
+
+.details {
+  padding: 15px;
+  text-align: center;
+}
+
+.id {
+  font-size: 14px;
+  color: #777;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.price {
+  font-size: 16px;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 14px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.category {
+  font-size: 12px;
+  color: #888;
+}
+
+.rating {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
 }

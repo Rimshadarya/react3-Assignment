@@ -1,17 +1,24 @@
-import Card from "./Component/Card/Card";
+import React from "react";
 import { Data } from "./Data";
+import Card from "../src/Component/Card/Card";
 
 const App = () => {
-  console.log(Data);   
+  return (
+    <div style={{ display: "flex", flexWrap: "wrap", gap: "20px", justifyContent: "center" }}>
+      {Data.map((item) => (
+        <Card
+          key={item.id}
+          id={item.id}
+          title={item.title}
+          price={item.price}
+          description={item.description}
+          category={item.category}
+          image={item.image}
+          rating={item.rating}
+        />
+      ))}
+    </div>
+  );
+};
 
-  return (<>
-   
-    {Data.map((e, i) => {
-        return <Card key={i} id={e.id} title={e.title} price={e.price} description={e.description} category={e.category} image={e.image} rating={e.rate} count={e.count} />;
-      })}
-  </>
-    
-    );
-  };
-  
-  export default App;
+export default App;
